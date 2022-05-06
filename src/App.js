@@ -1,22 +1,45 @@
 import logo from './logo.svg';
 import './App.css';
 
+const miConstante = <>
+  HOLA MUNDO
+</> ;
+
+const multiplicar = (a,b) => a+b;
+
+const btnPulsado = () => alert('boton pulsado');
+
+
 function App() {
+  const valores = ['aaaaaaaaa','bbbbbbbbb','ccccccccc']
+  const elements = ['one', 'two', 'three'];
+  const items = []
+
+
+  for (const [index, value] of elements.entries()) {
+  items.push(<li key={index}>{value}</li>)
+  }
+  
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <div className='nombre'>
+        <h1>{2+2}</h1>
+        <h1>{multiplicar(3,5)}</h1>
+      {miConstante}
+
+      <div>
+        <button onClick={btnPulsado}>BOTON</button>
+      </div>
+      
+      {
+        valores.map(element => <p>{element}</p>)
+      }
+      <div>
+        {items}
+      </div>
+
+      </div>
       </header>
     </div>
   );
