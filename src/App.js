@@ -17,7 +17,8 @@ function App() {
 
 
   for (const [index, value] of elements.entries()) {
-  items.push(<li key={index}>{value}</li>)
+    console.log(index,value)
+    items.push(<li key={index}>{value}</li>)
   }
   
   return (
