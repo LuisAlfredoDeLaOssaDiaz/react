@@ -5,7 +5,7 @@ function App() {
 
   return (
     <div>
-      <Prueba />
+      <Prueba title="Hola pepito pepo" />
       {texto}
     </div>
     
