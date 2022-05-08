@@ -3,13 +3,12 @@ import {useState, useEffect, useRef} from 'react'
 
 function App() {  
 
-  const [a, setA] = useState(8);
+  const [a, setA] = useState(0);
   const [text, setText] = useState('');
   
   const hacerCosas = _ => {
-    const a = 4
-    setA(a)
-    console.log(a)
+    const a = 1;
+    setA(a);
   }
 
   useEffect( _ => {
