@@ -1,12 +1,11 @@
 import React from 'react'
-import Prueba, {texto} from './components/prueba/index'
 
 function App() {  
-
+  const condicion = false;
   return (
     <div>
-      <Prueba title="Hola pepito pepo" >"Hola mundo children se accede al contenido de prueba con children"</Prueba>
-      {texto}
+      { condicion && <h1>Hola</h1> } {/*SI CONDICION EXISTE O ES TRUE, IMPRIMIR HOLA*/}
+      { condicion ? <h1>Hola</h1> : <h1>Adios</h1> } {/*SI CONDICION EXISTE O ES TRUE IMPRIMIR HOLA, SI ES FALSO IMPRIMIR ADIOS*/}
     </div>
     
   );
