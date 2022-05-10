@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Children } from 'react'
 
 export const texto = <>
   <h1>Hola mundo, const texto  </h1>
@@ -7,7 +7,9 @@ export const texto = <>
 const Prueba = props => <>
   <h1>
     Prueba 
-    {texto}{props.title}
+    {texto}
+    {props.title}
+    {props.children}
   </h1>
 </>
 

@@ -5,7 +5,7 @@ function App() {
 
   return (
     <div>
-      <Prueba title="Hola pepito pepo" />
+      <Prueba title="Hola pepito pepo" >"Hola mundo children se accede al contenido de prueba con children"</Prueba>
       {texto}
     </div>
     
