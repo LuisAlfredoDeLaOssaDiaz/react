@@ -1,25 +1,7 @@
 import React from "react";
-import {Cuadrado, Rectangulo, Component, Imput, GlobalStyle} from './styled'
+import Route from "./applicacion/routes";
+import NavBar from './applicacion/header'
 
-function App() {
-
-  return (
-    <div>
-      <GlobalStyle />
-      <div
-        style={{
-          backgroundColor: "salmon",
-          fontSize: "3rem",
-        }}>
-
-        <Cuadrado className="cuadrado" />
-        <Rectangulo className="rectangulo" />
-        <Component isRight={false}>Wepajé</Component>
-        <Imput myMaxLength={2} />
-        <h1>HOLA MUNDO</h1>
-      </div>
-    </div>
-  );
-}
+const App = _ => <Route /> 
 
 export default App;
